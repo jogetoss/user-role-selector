@@ -1,6 +1,9 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+*User Role Selector* allows a user to play multiple roles in a single app.
+
+![switch-role](https://github.com/jogetoss/user-role-selector/assets/70784722/83dd4ede-5585-4e16-ac1f-c8ad7652dd08)
+
 
 # Getting Help
 
