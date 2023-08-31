@@ -1,0 +1,26 @@
+[
+   {
+      "title":"@@org.joget.marketplace.UserRoleSelectorPermission.pluginLabel@@",
+      "properties":[
+         {
+            "label" : "@@org.joget.marketplace.UserRoleSelectorPermission.pluginLabel@@",
+            "type" : "header",
+            "description" : "@@org.joget.marketplace.UserRoleSelectorPermission.desc@@"
+         },
+         {
+            "name":"orgId",
+            "label":"@@userview.grouppermission.selectOrg@@",
+            "type":"selectbox",
+            "options_ajax":"[CONTEXT_PATH]/web/json/plugin/org.joget.apps.userview.lib.GroupPermission/service?action=getOrgs"
+         },
+         {
+            "name":"groupId",
+            "label":"@@form.useroptionsbinder.groupId@@",
+            "type":"selectbox",
+            "size":"10",
+            "options_ajax_on_change":"orgId",
+            "options_ajax":"[CONTEXT_PATH]/web/json/plugin/org.joget.apps.userview.lib.GroupPermission/service?action=getGroups"
+         }
+      ]
+   }
+]

@@ -1,0 +1,10 @@
+{
+    "optionGroup" : {
+        "@@org.joget.marketplace.UserRoleSelectorHashVariable.assist@@" : [
+            {
+                "value" : "#userRoleSelector.single?noescape#",
+                "label" : "@@org.joget.marketplace.UserRoleSelectorHashVariable.assist.single.label@@"
+            }
+        ]
+    }
+}
