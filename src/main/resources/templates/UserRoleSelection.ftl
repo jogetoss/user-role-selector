@@ -1,6 +1,10 @@
 <script>
     $(function(){
-        $("ul.user-menu").find("ul").append( $("#userRoleSelections li") );
+        if ($('body')[0].classList.contains('horizontal_menu')) {
+            $("ul.dropdown-menu").append( $("#userRoleSelections li") );
+        } else {
+            $("ul.user-menu").find("ul").append( $("#userRoleSelections li") );
+        }
     });
 </script>
 
