@@ -4,6 +4,8 @@
 
 ![switch-role](https://github.com/jogetoss/user-role-selector/assets/70784722/83dd4ede-5585-4e16-ac1f-c8ad7652dd08)
 
+To setup and configure this plugin, please see the [documentation](https://dev.joget.org/community/display/marketplace/User+Role+Selection+Plugin).
+
 
 # Getting Help
 
