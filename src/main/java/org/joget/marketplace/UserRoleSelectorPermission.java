@@ -26,13 +26,7 @@ public class UserRoleSelectorPermission extends UserviewPermission implements Fo
     }
 
     public String getVersion() {
-        final Properties projectProp = new Properties();
-        try {
-            projectProp.load(this.getClass().getClassLoader().getResourceAsStream("project.properties"));
-        } catch (IOException ex) {
-            LogUtil.error(getClass().getName(), ex, "Unable to get project version from project properties...");
-        }
-        return projectProp.getProperty("version");
+        return "8.0.1";
     }
 
     public String getDescription() {
