@@ -2,8 +2,13 @@
     $(function(){
         if ($('body')[0].classList.contains('horizontal_menu')) {
             $("ul.dropdown-menu").append( $("#userRoleSelections li") );
-        } else {
+        } else if($("li.user-link ul.dropdown-menu")){
+            //Essence theme
+            $("li.user-link ul.dropdown-menu").append( $("#userRoleSelections li") );
+        }else if($("ul.user-menu").find("ul")){
             $("ul.user-menu").find("ul").append( $("#userRoleSelections li") );
+        }else{
+            console.log("Cant find menu to inject user role selection");
         }
     });
 </script>
