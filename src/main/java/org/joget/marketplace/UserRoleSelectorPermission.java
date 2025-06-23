@@ -26,7 +26,7 @@ public class UserRoleSelectorPermission extends UserviewPermission implements Fo
     }
 
     public String getVersion() {
-        return "8.0.1";
+        return "8.0.3";
     }
 
     public String getDescription() {

@@ -1,16 +1,22 @@
 <script>
-    $(function(){
-        if ($('body')[0].classList.contains('horizontal_menu')) {
-            $("ul.dropdown-menu").append( $("#userRoleSelections li") );
-        } else if($("li.user-link ul.dropdown-menu")){
-            //Essence theme
-            $("li.user-link ul.dropdown-menu").append( $("#userRoleSelections li") );
-        }else if($("ul.user-menu").find("ul")){
-            $("ul.user-menu").find("ul").append( $("#userRoleSelections li") );
-        }else{
-            console.log("Cant find menu to inject user role selection");
-        }
-    });
+   $(function(){
+    const roleSelections = $("#userRoleSelections li");
+    let targetMenu = null;
+    
+    if ($('body').hasClass('horizontal_menu')) {
+        targetMenu = $("ul.dropdown-menu");
+    } else if ($("li.user-link ul.dropdown-menu").length > 0) {
+        targetMenu = $("li.user-link ul.dropdown-menu");
+    } else if ($("ul.user-menu ul").length > 0) {
+        targetMenu = $("ul.user-menu ul");
+    }
+    
+    if (targetMenu && targetMenu.length > 0) {
+        targetMenu.append(roleSelections);
+    } else {
+        console.log("Unable to locate target menu for user role selection injection");
+    }
+});
 </script>
 
 <div id="userRoleSelections" style="display: none;">
