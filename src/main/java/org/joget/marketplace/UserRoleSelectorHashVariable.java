@@ -65,6 +65,10 @@ public class UserRoleSelectorHashVariable extends DefaultHashVariablePlugin {
         ExtDirectoryManager directoryManager = (ExtDirectoryManager) ac.getBean("directoryManager");
         
         User user = wum.getCurrentUser();
+
+        if (user == null) {
+            return "";
+        }
         
         Map<String, String> params = (Map) request.getAttribute(ParameterizedUrlHandlerMapping.PATH_PARAMETERS);
         
