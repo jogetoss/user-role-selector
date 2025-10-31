@@ -142,6 +142,7 @@ public class UserRoleSelectorHashVariable extends DefaultHashVariablePlugin {
         dataModel.put("currentUserViewKeyValue", currentUserviewKeyValue);
         dataModel.put("userviewId", params.get("userviewId"));
         dataModel.put("appId", params.get("appId"));
+        dataModel.put("menuId", params.get("menuId"));
         
         Collection<Group> groups = directoryManager.getGroupByUsername(user.getUsername());
             
