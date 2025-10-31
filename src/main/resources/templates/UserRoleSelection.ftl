@@ -22,7 +22,7 @@
 <div id="userRoleSelections" style="display: none;">
     <#list options as option>
         <li>
-            <a class="switchRole" title="Switch to ${option.label!?html}" onClick="window.location='/jw/web/userview/${appId!}/${userviewId!}/${option.id!}/';return false;">
+            <a class="switchRole" title="Switch to ${option.label!?html}" href="" onClick="window.location='/jw/web/userview/${appId!}/${userviewId!}/${option.id!}/';return false;">
             
             <#if option.selected>
                 ${current!}
