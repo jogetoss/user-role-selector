@@ -37,7 +37,7 @@ public class UserRoleSelectorHashVariable extends DefaultHashVariablePlugin {
     }
 
     public String getVersion() {
-        return "8.0.2";
+        return Activator.PLUGIN_VERSION;
     }
 
     public String getDescription() {

@@ -26,7 +26,7 @@ public class UserRoleSelectorPermission extends UserviewPermission implements Fo
     }
 
     public String getVersion() {
-        return "8.0.4";
+        return Activator.PLUGIN_VERSION;
     }
 
     public String getDescription() {
