@@ -9,7 +9,7 @@ import org.osgi.framework.ServiceRegistration;
 public class Activator implements BundleActivator {
 
     protected Collection<ServiceRegistration> registrationList;
-    public static final String PLUGIN_VERSION = "8.0.5";
+    public static final String PLUGIN_VERSION = "8.0.6";
 
     public void start(BundleContext context) {
         registrationList = new ArrayList<ServiceRegistration>();

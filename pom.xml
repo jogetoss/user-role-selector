@@ -4,7 +4,7 @@
     <groupId>org.joget.marketplace</groupId>
     <artifactId>user-role-permission</artifactId>
     <packaging>bundle</packaging>
-    <version>8.0.5</version>
+    <version>8.0.6</version>
     <name>user-role-permission</name>
     <url>http://www.joget.org</url>
     <build>
